@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* hero section */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+#hero-section {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: background-image 1s ease-in-out;
+}
+
+#hero-section > div {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 50px;
+}
+
+#hero-section > div h1 {
+    font-size: 50px;
+    line-height: 60px;
+    margin-bottom: 30px;
+}
+
+        #trackid-search {
+            background-color: rgb(41, 41, 41);
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 50px;
+            width: 80%;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease-in-out;
+        }
+        
+        #trackid-search:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+        
+        #trackid-search input {
+            border: none;
+            background-color: transparent;
+            color: white;
+            font-size: 16px;
+            padding-left: 20px;
+            width: 100%;
+            height: 100%;
+            outline: none;
+            transition: all 0.3s ease;
+            border-radius: 50px;
+        }
+        
+        #trackid-search input::placeholder {
+            color: rgba(255, 255, 255, 0.6);
+        }
+        
+        #trackid-search input:focus {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+        
+        #trackid-search button {
+            display: flex;
+            align-items: center;
+            background-color: #3498DB;
+            padding: 12px 35px;
+            color: white;
+            border: none;
+            border-radius: 50px;
+            font-size: 16px;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+        
+        #trackid-search button:hover {
+            background-color: #2980B9;
+            transform: scale(1.05);
+        }
+        
+        #trackid-search button img {
+            margin-right: 10px;
+            transition: transform 0.3s ease;
+        }
+        
+        #trackid-search button:hover img {
+            transform: rotate(45deg);
+        }
+        
+/* feature section */
+#feature-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 30px;
+    padding: 40px 20px;
+    
+    margin: auto;
+    margin-top: -100px; /* pulls it up over hero section */
+    position: relative;
+    z-index: 10;
+}
+
+.feature-box img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin: 0 auto 15px auto; /* centers the icon horizontally and adds bottom space */
+    display: block; /* needed for margin auto to work */
+    transition: transform 0.3s ease;
+}
+
+.feature-box:hover img {
+    transform: scale(1.1);
+}
+
+
+.feature-box {
+    width: 350px;
+    min-height: 150px; /* force boxes to be same height */
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+/* get started section */
+#getstarted-section {
+    background: linear-gradient(to bottom,#ffffff,#3498db54, #3498db54);
+      width: 100%;
+    height: 80vh;
+    display: flex;
+    align-content: center;
+ justify-content: center;
+
+   
+
+}
+#getstarted-section>div {
+  width: 40%;
+    display: flex;
+    flex-direction: column;
+align-items:flex-start;
+    justify-content: center;
+
+
+    margin-right: 50px;
+}
+#getstarted-section>div h2 {
+    margin-bottom: 15px;
+}
+#getstarted-section>div button {
+    background-color: #3498DB;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 10px;
+    font-size: larger;
+    font-weight: 600;
+    color: white;
+    margin-top: 20px;
+}
+
+/* deliverypartner-section */
+
+#deliverpartner-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     width: 100%;
+    height: 100vh;
+
+}
+
+#deliverpartner-section >div {
+    width: 50%;
+
+    display: flex;
+    flex-direction: column;
+align-items:flex-start;
+    justify-content: space-between;
+margin: 0;
+}
+
+#deliverpartner-section>div h2 {
+    margin-bottom: 15px;
+}
+#deliverpartner-section>div ol li {
+    margin-top: 15px;
+}
+#deliverpartner-section>div ol li spam {
+    font-weight: 600;
+}
+
+/* logisticdeliver-section */
+#logisticdeliver-section {
+    padding: 80px 50px ;
+    text-align: center;
+}
+#logisticdeliver-section h2 {
+    font-size: 30px;
+}
+
+#logisticdeliver-section > div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+
+
+}
+.logistic-box {
+width: 300px;
+border-radius: 5px;
+background-color: white;
+box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+margin: 0 30px;
+text-align: center;
+padding: 20px;
+}
+
+/* special feature-section */
+#specialfeature-section h2  {
+font-size: 30px;
+text-align: center;
+padding: 50px 0;
+
+}
+#specialfeature-section> div {
+    display: flex;
+align-items: center;
+    justify-content: center;
+}
+.specialfeature-box {
+  width: 200px;
+  margin: 25px;
+  padding: 20px;
+    flex-direction: column;
+    border: 1px solid black;
+    border-radius: 15px;
+    
+}
+.specialfeature-box div {
+   display: flex;
+   justify-content: space-between;
+    margin: 10px 0 30px 0;
+}
+.specialfeature-box H5 {
+font-size: 18px;
+    margin: 10px 0 15px 0;
+
+}
+
+.specialfeature-box:hover {
+    background-color:#3498DB;
+    color: white;
+}
+
+
+
+        
+
+/* CourierPartner-section */
+
+
+#courierPartner-section {
+   
+    overflow: hidden;
+  margin: 50px 0;
+
+    background-color: black;
+    padding: 30px 0;
+    white-space: nowrap;
+}
+#courierPartner-section div {
+display: flex;
+justify-content: space-around;
+}
+
+
+#courierPartner-section h3 {
+    color: white;
+  text-align: center;
+  margin: 10px 0 30px 0;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+
+/* FAQ section */
+
+#FAQ-section {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+padding: 50px 0;
+}
+
+#FAQ-section > h3 {
+  
+    font-size: 30px;
+    font-weight: 700;
+}
+
+
+
+#FAQ-section > p {
+    margin: 20px 0 50px 0;
+}
+.QueAndAns {
+    border: 1px solid black;
+    border-radius: 4px;
+    width: 90%;
+    margin: 10px 0;
+    padding: 15px;
+}
+
+.que {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+
+}
+.que  h4 {
+   font-weight: 600;
+}
+
+.FQAexpandarrow {
+    display: inline-block;
+    cursor: pointer;
+    transition: tranform 3s ease;
+}
+.rotated {
+    transform: rotate(180deg);
+}
+.ans {
+    display: none;
+    margin-top: 10px;
+
+
+}
+.show {
+    display: block;
+    
+}
+
